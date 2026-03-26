@@ -98,7 +98,7 @@ public class SecurityConfig {
         // config.setAllowedOrigins(List.of("*"));
 
         // ✅ dùng origin cụ thể (React Vite)
-        config.setAllowedOrigins(List.of("*"));
+        config.setAllowedOriginPatterns(List.of("*"));
 
         // hoặc nếu muốn linh hoạt:
         // config.setAllowedOriginPatterns(List.of("*"));
