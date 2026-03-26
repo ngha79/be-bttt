@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Task Management System API
+
+  datasource:
+    url: jdbc:postgresql://dpg-d72fo34r85hc73dp3peg-a.singapore-postgres.render.com:5432/bttt_1mz8
+    username: bttt_1mz8_user
+    password: pUJR6Z1IVserdpXcxKotv0Bw8KQJLFzw
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+
+server:
+  port: ${PORT:8080}
